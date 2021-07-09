@@ -23,5 +23,11 @@ docker-compose -f docker-compose-dev.yml down
 ## Open the app:
 Open your browser in ``` http://localhost ```
 
+*please wait until the angular will compile, 
+until this log will appear:
+```
+| ** Angular Live Development Server is listening on 0.0.0.0:4200, open your browser on http://localhost:4200/ **
+client    | : Compiled successfully.
+```
 
 
