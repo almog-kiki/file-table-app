@@ -1,0 +1,12 @@
+<div  class="card">
+    <app-header-title [title]="title"></app-header-title>
+    <app-spinner *ngIf="isLoading"></app-spinner>
+
+    <ul class="list-group" *ngFor="let file of files">
+        <li class="list-group-item li-item" 
+            [ngClass]="{'active': selectedItem == file}"
+            (click)="getFileContent(file)">
+            <span class="li-text">{{ file }}</span>
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,19 @@
+
+.loader{
+    display: flex;
+    justify-content: center;
+    margin: 1em 0;
+}
+.li-item{
+    margin: 10px 0;
+}
+.li-text {
+    font-size: 20px;
+  
+}
+.active, .li-item:hover {
+    background-color: #439af7;
+    color: rgb(244, 244, 244);
+    border: 0;
+    font-weight: bold;
+  }

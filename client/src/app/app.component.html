@@ -1,0 +1,17 @@
+
+<nav class="navbar navbar-expand navbar-dark bg-dark">
+  <a href="#" class="navbar-brand">{{title}}</a>
+  <div class="navbar-nav mr-auto"></div>
+</nav>
+<div class="content">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <app-file-list></app-file-list>
+      </div>
+      <div class="col-sm">
+            <app-file-content *ngIf="isTableListExists"></app-file-content>
+        </div>
+    </div>
+  </div>
+</div>

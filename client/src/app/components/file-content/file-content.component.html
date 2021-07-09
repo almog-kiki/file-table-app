@@ -1,0 +1,23 @@
+<div  class="card">
+    <app-header-title [title]="title"></app-header-title>
+    <app-spinner *ngIf="isLoading"></app-spinner>
+
+    <div>
+        <div *ngIf="!isLoading" class="card-body" >
+            <div class="row">
+                <div class="col-sm">
+                    <ul class="list-group" *ngFor="let table of tables">
+                        <li class="list-group-item li-item" 
+                            [ngClass]="{'active': selectedTable == table}"
+                            (click)="showTableDetails(table)">
+                            {{ table.title }}
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm">
+                    <app-table-details *ngIf="selectedTable" [tableDetails]="selectedTable"></app-table-details>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
